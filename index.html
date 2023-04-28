@@ -312,7 +312,7 @@
         }
 
         /* start Home */
-        .home {
+             .home {
             height: 130vh;
             width: 100%;
             background: url('8888888.png');
@@ -321,6 +321,14 @@
             background-position: center;
             position: relative;
             padding-top: 300px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .home {
+                background-size: 100% 100%;
+                padding-top: 200px;
+                height: auto;
+            }
         }
 
             .home::after {
