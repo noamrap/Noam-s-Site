@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="he">
 <head>
-    <script src="https://cdn.enable.co.il/licenses/enable-L18859tnuij096k5-0423-43815/init.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>אתר בשטר</title>
     <!-- link file icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
@@ -15,38 +14,75 @@
     <!-- link file css -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="header">
-        <div class="contanier">
-            <i id="btnMenu" class="fa-solid fa-bars"></i>
-            <nav>
-                <img src="image/logo.png" alt="">
-                <div class="nav-links">
-                    <a href="#home" class="active">דף הבית</a>
-                    <a href="#about">אודות</a>
-                
-                </div>
-            </nav>
-        </div>
-    </div>
+    <header>
+        <img src="ppooppoo.png" alt="My Logo">
+    </header>
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+            header img {
+                max-width: 100%;
+                height: auto;
+            }
+
+        @media only screen and (min-width: 768px) {
+            /* apply styles only on screens wider than 768px */
+            header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+            }
+
+                header img {
+                    max-width: none;
+                    height: 80px;
+                }
+
+                    /* increase logo size on larger screens */
+                    header img.large {
+                        height: 120px;
+                    }
+        }
+    </style>
+   
 
     <!-- start Home  -->
 
-    <section class="home" id="home">
-        <div class="contanier">
-            <div class="text">
-                <p>נועם   בניית אתרים</p>
-                <h1>התמחות</h1>
-                <ul>
-                    <li>תכנות</li>
-                    <li>בניית אתרים</li>
-                
-                </ul>
-                 <a href="projects.html" class="btn">פרוייקטים</a>
-            </div>
-        </div>
-    </section>
 
+
+
+
+
+
+
+
+    <style>
+        body {
+            background-color: #777777;
+        }
+
+        .btn {
+            background-color: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+            .btn:hover {
+                background-color: #fff;
+                color: #000;
+            }
+    </style>
 
     <!-- start About -->
 
@@ -61,20 +97,17 @@
                 <div class="text">
                     <h3>נועם רפופורט</h3>
                     <span>אני תלמיד כיתה י במגמת הנדסת תכנה</span>
-                    <p>
-
-                      
-                       ממגמה זו שאבתי חלק מהידע שלי אך רוב הידע בא מלמידה עצמית
-                        
-                       האהבה לבניית אתרים החלה כבר בשיעור הראשון
+                    <p style="font-size: 18px; font-weight: bold; color: #333;">
+                        ממגמה זו שאבתי חלק מהידע שלי אך רוב הידע בא מלמידה עצמית
+                        האהבה לבניית אתרים החלה כבר בשיעור הראשון
                         יום אחד אבי ביקש שאבנה לו אתר לעסק כמובן שהסכמתי
                         ומשם מפה לאוזן עוד ועוד אנשים החלו לבקש ממני אתר לעסק שלהם
-
                     </p>
-                    <img src="https://st4.depositphotos.com/5934840/27337/v/450/depositphotos_273373950-stock-illustration-young-man-avatar-cartoon-character.jpg" alt="">
+                    <img src="https://st4.depositphotos.com/5934840/27337/v/450/depositphotos_273373950-stock-illustration-young-man-avatar-cartoon-character.jpg" alt="" width="300">
+
 
                 </div>
-               
+
             </div>
 
             <div class="cont2">
@@ -312,15 +345,14 @@
         }
 
         /* start Home */
-             .home {
-            height: 130vh;
-            width: 100%;
-            background: url('8888888.png');
+        .home {
+            height: 60vh;
+            width: 110%;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             position: relative;
-            padding-top: 300px;
+            padding-top: 800px;
         }
 
         @media only screen and (max-width: 768px) {
@@ -331,18 +363,18 @@
             }
         }
 
-            .home::after {
-                content: '';
-                position: absolute;
-                bottom: -2px;
-                z-index: 50;
-                height: 200px;
-                background: url(image/shape.png);
-                left: 0;
-                width: 100%;
-                background-repeat: repeat-x;
-                background-size: cover;
-            }
+        .home::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            z-index: 50;
+            height: 200px;
+            background: url(image/shape.png);
+            left: 0;
+            width: 100%;
+            background-repeat: repeat-x;
+            background-size: cover;
+        }
         /* home::after MEdia */
 
         @media(min-width:480px) {
